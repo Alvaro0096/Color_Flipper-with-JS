@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: consolas;
+}
+
+.nav_bar h1, a{
+	text-transform: uppercase;
+	color: #191919;
+	font-weight: 700;
+}
+
+.nav_bar{
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: whitesmoke;
+	box-shadow: 0px 1px 10px #191919;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	padding: 0.5rem;
+	margin-right: 1rem;
+	border: 1px solid #191919;
+	border-radius: 10px;
+	transition: all 1s ease-in-out;
+}
+
+a:hover{
+	color: #ffffff;
+	background: #191919;
+}
+
+.container{
+	height: calc(100vh - 80px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.box_back{
+	text-align: center;
+}
+
+.box_back h3, span{
+	font-size: 2rem;
+}
+
+.h3_text{
+	border: 2px solid #191919;
+	padding: 1rem;
+	border-radius: 10px;
+	background: white;	
+}
+
+.box_back button{
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0.5rem;
+	margin-top: 1rem;
+	border-radius: 10px;
+	transition: all 1s ease-in-out;
+}
+
+.box_back button:hover{
+	border-radius: 30px;
+}
+
+@media (max-width: 600px){
+
+h1{
+	font-size: 1.3rem;
+}	
+
+.nav_bar{
+	flex-wrap: wrap;
+}
+
+ul li a{
+	padding: 0.3rem;
+	margin-right: 0.6rem;
+}
+
+.box_back h3, span{
+	font-size: 1.3rem;
+}
+
+.h3_text{
+	padding: 0.7rem;	
+}
+
+.box_back button{
+	font-size: 1rem;
+}
+
+}
